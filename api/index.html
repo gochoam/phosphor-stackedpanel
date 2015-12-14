@@ -144,7 +144,9 @@ browserify myapp.js -o mybundle.js
 
 <span class="hljs-comment">// Setup the stacked panel.</span>
 <span class="hljs-keyword">let</span> panel = <span class="hljs-keyword">new</span> StackedPanel();
-panel.children.assign([w1, w2, w3]);
+panel.addChild(w1);
+panel.addChild(w2);
+panel.addChild(w3);
 
 <span class="hljs-comment">// Set the currently visible widget as needed.</span>
 panel.currentWidget = w1;
