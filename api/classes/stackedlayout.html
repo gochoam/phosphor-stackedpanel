@@ -70,8 +70,10 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A layout where only one child widget is visible at a time.</p>
+						<p>A layout where visible children are stacked atop one another.</p>
 					</div>
+					<h4 id="notes">Notes</h4>
+					<p>The Z-order of the visible children follows their layout order.</p>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
@@ -101,15 +103,8 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-external"><a href="stackedlayout.html#_box" class="tsd-kind-icon">_box</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-external"><a href="stackedlayout.html#_current" class="tsd-kind-icon">_current</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="stackedlayout.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="stackedlayout.html#parent" class="tsd-kind-icon">parent</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section tsd-is-external">
-							<h3>Accessors</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-external"><a href="stackedlayout.html#currentwidget" class="tsd-kind-icon">current<wbr>Widget</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-external">
@@ -131,13 +126,14 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-external"><a href="stackedlayout.html#onaftershow" class="tsd-kind-icon">on<wbr>After<wbr>Show</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected tsd-is-external"><a href="stackedlayout.html#onbeforedetach" class="tsd-kind-icon">on<wbr>Before<wbr>Detach</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected tsd-is-external"><a href="stackedlayout.html#onbeforehide" class="tsd-kind-icon">on<wbr>Before<wbr>Hide</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-external"><a href="stackedlayout.html#onchildhidden" class="tsd-kind-icon">on<wbr>Child<wbr>Hidden</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-external"><a href="stackedlayout.html#onchildhidden" class="tsd-kind-icon">on<wbr>Child<wbr>Hidden</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected tsd-is-external"><a href="stackedlayout.html#onchildremoved" class="tsd-kind-icon">on<wbr>Child<wbr>Removed</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-external"><a href="stackedlayout.html#onchildshown" class="tsd-kind-icon">on<wbr>Child<wbr>Shown</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-external"><a href="stackedlayout.html#onchildshown" class="tsd-kind-icon">on<wbr>Child<wbr>Shown</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-external"><a href="stackedlayout.html#onfitrequest" class="tsd-kind-icon">on<wbr>Fit<wbr>Request</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-external"><a href="stackedlayout.html#onresize" class="tsd-kind-icon">on<wbr>Resize</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-external"><a href="stackedlayout.html#onupdaterequest" class="tsd-kind-icon">on<wbr>Update<wbr>Request</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="stackedlayout.html#processparentmessage" class="tsd-kind-icon">process<wbr>Parent<wbr>Message</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="stackedlayout.html#removechild" class="tsd-kind-icon">remove<wbr>Child</a></li>
 							</ul>
 						</section>
 					</div>
@@ -151,17 +147,7 @@
 					<div class="tsd-signature tsd-kind-icon">_box<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IBoxSizing</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor-stackedpanel/blob/HEAD/src/layout.ts#L234">layout.ts:234</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-external">
-					<a name="_current" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _current</h3>
-					<div class="tsd-signature tsd-kind-icon">_current<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Widget</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/phosphorjs/phosphor-stackedpanel/blob/HEAD/src/layout.ts#L235">layout.ts:235</a></li>
+							<li>Defined in <a href="https://github.com/phosphorjs/phosphor-stackedpanel/blob/HEAD/src/layout.ts#L243">layout.ts:243</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -204,51 +190,6 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-external">
-				<h2>Accessors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class tsd-is-external">
-					<a name="currentwidget" class="tsd-anchor"></a>
-					<h3>current<wbr>Widget</h3>
-					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> currentWidget<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Widget</span></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> currentWidget<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Widget</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor-stackedpanel/blob/HEAD/src/layout.ts#L39">layout.ts:39</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Get the current layout widget.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Widget</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor-stackedpanel/blob/HEAD/src/layout.ts#L46">layout.ts:46</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Set the current layout widget.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <span class="tsd-signature-type">Widget</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-external">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-external">
 					<a name="_fit" class="tsd-anchor"></a>
@@ -260,7 +201,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor-stackedpanel/blob/HEAD/src/layout.ts#L166">layout.ts:166</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor-stackedpanel/blob/HEAD/src/layout.ts#L158">layout.ts:158</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -282,7 +223,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor-stackedpanel/blob/HEAD/src/layout.ts#L207">layout.ts:207</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor-stackedpanel/blob/HEAD/src/layout.ts#L209">layout.ts:209</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -349,7 +290,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites PanelLayout.attachChild</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor-stackedpanel/blob/HEAD/src/layout.ts#L82">layout.ts:82</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor-stackedpanel/blob/HEAD/src/layout.ts#L49">layout.ts:49</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -481,7 +422,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites PanelLayout.detachChild</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor-stackedpanel/blob/HEAD/src/layout.ts#L113">layout.ts:113</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor-stackedpanel/blob/HEAD/src/layout.ts#L82">layout.ts:82</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -548,7 +489,7 @@
 								<p>Inherited from PanelLayout.initialize</p>
 								<p>Overwrites Layout.initialize</p>
 								<ul>
-									<li>Defined in /home/travis/build/phosphorjs/phosphor-stackedpanel/node_modules/phosphor-panel/lib/layout.d.ts:61</li>
+									<li>Defined in /home/travis/build/phosphorjs/phosphor-stackedpanel/node_modules/phosphor-panel/lib/layout.d.ts:77</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -615,7 +556,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites PanelLayout.moveChild</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor-stackedpanel/blob/HEAD/src/layout.ts#L101">layout.ts:101</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor-stackedpanel/blob/HEAD/src/layout.ts#L68">layout.ts:68</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -661,7 +602,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites AbstractLayout.onAfterAttach</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor-stackedpanel/blob/HEAD/src/layout.ts#L131">layout.ts:131</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor-stackedpanel/blob/HEAD/src/layout.ts#L101">layout.ts:101</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -690,7 +631,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites AbstractLayout.onAfterShow</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor-stackedpanel/blob/HEAD/src/layout.ts#L123">layout.ts:123</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor-stackedpanel/blob/HEAD/src/layout.ts#L93">layout.ts:93</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -776,25 +717,24 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-external">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-external">
 					<a name="onchildhidden" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Child<wbr>Hidden</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-external">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-external">
 						<li class="tsd-signature tsd-kind-icon">on<wbr>Child<wbr>Hidden<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ChildMessage</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from Layout.onChildHidden</p>
+								<p>Overwrites Layout.onChildHidden</p>
 								<ul>
-									<li>Defined in /home/travis/build/phosphorjs/phosphor-stackedpanel/node_modules/phosphor-widget/lib/layout.d.ts:146</li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor-stackedpanel/blob/HEAD/src/layout.ts#L120">layout.ts:120</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>A message handler invoked on a <code>&#39;child-hidden&#39;</code> message.</p>
 								</div>
-								<p>The default implementation of this handler is a no-op.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -818,7 +758,7 @@
 								<p>Inherited from PanelLayout.onChildRemoved</p>
 								<p>Overwrites Layout.onChildRemoved</p>
 								<ul>
-									<li>Defined in /home/travis/build/phosphorjs/phosphor-stackedpanel/node_modules/phosphor-panel/lib/layout.d.ts:136</li>
+									<li>Defined in /home/travis/build/phosphorjs/phosphor-stackedpanel/node_modules/phosphor-panel/lib/layout.d.ts:152</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -839,25 +779,24 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-external">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-external">
 					<a name="onchildshown" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Child<wbr>Shown</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-external">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-external">
 						<li class="tsd-signature tsd-kind-icon">on<wbr>Child<wbr>Shown<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ChildMessage</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from Layout.onChildShown</p>
+								<p>Overwrites Layout.onChildShown</p>
 								<ul>
-									<li>Defined in /home/travis/build/phosphorjs/phosphor-stackedpanel/node_modules/phosphor-widget/lib/layout.d.ts:140</li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor-stackedpanel/blob/HEAD/src/layout.ts#L109">layout.ts:109</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>A message handler invoked on a <code>&#39;child-shown&#39;</code> message.</p>
 								</div>
-								<p>The default implementation of this handler is a no-op.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -880,7 +819,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites Layout.onFitRequest</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor-stackedpanel/blob/HEAD/src/layout.ts#L157">layout.ts:157</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor-stackedpanel/blob/HEAD/src/layout.ts#L149">layout.ts:149</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -909,7 +848,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites AbstractLayout.onResize</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor-stackedpanel/blob/HEAD/src/layout.ts#L139">layout.ts:139</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor-stackedpanel/blob/HEAD/src/layout.ts#L131">layout.ts:131</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -938,7 +877,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites AbstractLayout.onUpdateRequest</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor-stackedpanel/blob/HEAD/src/layout.ts#L148">layout.ts:148</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor-stackedpanel/blob/HEAD/src/layout.ts#L140">layout.ts:140</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -991,6 +930,45 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+					<a name="removechild" class="tsd-anchor"></a>
+					<h3>remove<wbr>Child</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Child<span class="tsd-signature-symbol">(</span>child<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Widget</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from PanelLayout.removeChild</p>
+								<ul>
+									<li>Defined in /home/travis/build/phosphorjs/phosphor-stackedpanel/node_modules/phosphor-panel/lib/layout.d.ts:67</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Remove a child widget from the layout.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>child: <span class="tsd-signature-type">Widget</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The child widget to remove from the layout.</p>
+										<h4 id="notes">Notes</h4>
+										<p>A child widget will be removed from the layout automatically when
+											its <code>parent</code> is set to <code>null</code>. This method should only be invoked
+											directly when removing a widget from a layout which has yet to be
+										installed on a parent widget.</p>
+										<p>This method does <em>not</em> modify the widget&#39;s <code>parent</code>.</p>
+										<p>If the child is not contained in the layout, this is a no-op.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -1011,17 +989,11 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-external">
 								<a href="stackedlayout.html#_box" class="tsd-kind-icon">_box</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-external">
-								<a href="stackedlayout.html#_current" class="tsd-kind-icon">_current</a>
-							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external">
 								<a href="stackedlayout.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external">
 								<a href="stackedlayout.html#parent" class="tsd-kind-icon">parent</a>
-							</li>
-							<li class=" tsd-kind-accessor tsd-parent-kind-class tsd-is-external">
-								<a href="stackedlayout.html#currentwidget" class="tsd-kind-icon">current<wbr>Widget</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-external">
 								<a href="stackedlayout.html#_fit" class="tsd-kind-icon">_fit</a>
@@ -1071,13 +1043,13 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected tsd-is-external">
 								<a href="stackedlayout.html#onbeforehide" class="tsd-kind-icon">on<wbr>Before<wbr>Hide</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-external">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-external">
 								<a href="stackedlayout.html#onchildhidden" class="tsd-kind-icon">on<wbr>Child<wbr>Hidden</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-protected tsd-is-external">
 								<a href="stackedlayout.html#onchildremoved" class="tsd-kind-icon">on<wbr>Child<wbr>Removed</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-external">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-external">
 								<a href="stackedlayout.html#onchildshown" class="tsd-kind-icon">on<wbr>Child<wbr>Shown</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-external">
@@ -1091,6 +1063,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
 								<a href="stackedlayout.html#processparentmessage" class="tsd-kind-icon">process<wbr>Parent<wbr>Message</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external">
+								<a href="stackedlayout.html#removechild" class="tsd-kind-icon">remove<wbr>Child</a>
 							</li>
 						</ul>
 					</li>

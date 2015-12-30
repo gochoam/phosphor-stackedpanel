@@ -70,7 +70,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A panel where only one child widget is visible at a time.</p>
+						<p>A panel where visible children are stacked atop one another.</p>
 					</div>
 					<h4 id="notes">Notes</h4>
 					<p>This class provides a convenience wrapper around a <a href="stackedlayout.html">StackedLayout</a>.</p>
@@ -124,7 +124,6 @@
 						<section class="tsd-index-section tsd-is-external">
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-external"><a href="stackedpanel.html#currentwidget" class="tsd-kind-icon">current<wbr>Widget</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-external"><a href="stackedpanel.html#widgetremoved" class="tsd-kind-icon">widget<wbr>Removed</a></li>
 							</ul>
 						</section>
@@ -392,48 +391,6 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-external">
 				<h2>Accessors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class tsd-is-external">
-					<a name="currentwidget" class="tsd-anchor"></a>
-					<h3>current<wbr>Widget</h3>
-					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class tsd-is-external">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> currentWidget<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Widget</span></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> currentWidget<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Widget</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor-stackedpanel/blob/HEAD/src/panel.ts#L71">panel.ts:71</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Get the current panel widget.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Widget</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor-stackedpanel/blob/HEAD/src/panel.ts#L78">panel.ts:78</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Set the current panel widget.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <span class="tsd-signature-type">Widget</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-external">
 					<a name="widgetremoved" class="tsd-anchor"></a>
 					<h3>widget<wbr>Removed</h3>
@@ -1131,7 +1088,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites Widget.onChildAdded</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor-stackedpanel/blob/HEAD/src/panel.ts#L85">panel.ts:85</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor-stackedpanel/blob/HEAD/src/panel.ts#L71">panel.ts:71</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1160,7 +1117,7 @@
 							<aside class="tsd-sources">
 								<p>Overwrites Widget.onChildRemoved</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/phosphorjs/phosphor-stackedpanel/blob/HEAD/src/panel.ts#L92">panel.ts:92</a></li>
+									<li>Defined in <a href="https://github.com/phosphorjs/phosphor-stackedpanel/blob/HEAD/src/panel.ts#L78">panel.ts:78</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1629,9 +1586,6 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external">
 								<a href="stackedpanel.html#title" class="tsd-kind-icon">title</a>
-							</li>
-							<li class=" tsd-kind-accessor tsd-parent-kind-class tsd-is-external">
-								<a href="stackedpanel.html#currentwidget" class="tsd-kind-icon">current<wbr>Widget</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-external">
 								<a href="stackedpanel.html#widgetremoved" class="tsd-kind-icon">widget<wbr>Removed</a>
