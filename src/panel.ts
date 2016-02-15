@@ -40,6 +40,8 @@ const CHILD_CLASS = 'p-StackedPanel-child';
  *
  * #### Notes
  * This class provides a convenience wrapper around a [[StackedLayout]].
+ * It is the responsibility of code that uses this class to show and hide
+ * the child widgets.
  */
 export
 class StackedPanel extends Panel {
