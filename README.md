@@ -111,8 +111,8 @@ to created a desktop-like experience. For instance, [Phosphor
 tabs](http://phosphorjs.github.io/phosphor-tabs/api/) uses stacked panels to
 implement Tabs Panel.
 
-A simple example is shown below. The following code import the required modules
-and creates some basic content fir the panel:
+A simple example is shown below. The following codes import the required modules
+and creates some basic content for the panel:
 
 
 ```typescript
@@ -130,7 +130,7 @@ let w3 = new Widget();
 ```
 
 The `StackedPanel()` constructor creates a new panel, where the widgets can be
-added. The `.addChild()` method takes as argument a new widget which is
+added. The `.addChild()` method takes one argument, a new widget which is
 stacked on top of the existing ones. Toggling the visibility of each item is
 straightforward with the `.hide()` and `.show()` methods. 
 
