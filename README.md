@@ -6,8 +6,6 @@ phosphor-stackedpanel
 
 A Phosphor layout panel where visible children are stacked atop one another.
 
-[API Docs](http://phosphorjs.github.io/phosphor-stackedpanel/api/)
-
 
 Package Install
 ---------------
@@ -107,6 +105,16 @@ Usage Examples
 **Note:** This module is fully compatible with Node/Babel/ES6/ES5. Simply
 omit the type declarations when using a language other than TypeScript.
 
+This small module allows stacking widgets and changing their visibility. The
+methods included in `phosphor-stackedpanel` can be combined with other widgets
+to created a desktop-like experience. For instance, [Phosphor
+tabs](http://phosphorjs.github.io/phosphor-tabs/api/) uses stacked panels to
+implement Tabs Panel.
+
+A simple example is shown below. The following code import the required modules
+and creates some basic content fir the panel:
+
+
 ```typescript
 import {
   StackedPanel
@@ -116,12 +124,18 @@ import {
   Widget
 } from 'phosphor-widget';
 
-
-// Create some content for the panel.
 let w1 = new Widget();
 let w2 = new Widget();
 let w3 = new Widget();
+```
 
+The `StackedPanel()` constructor creates a new panel, where the widgets can be
+added. The `.addChild()` method takes as argument a new widget which is
+stacked on top of the existing ones. Toggling the visibility of each item is
+straightforward with the `.hide()` and `.show()` methods. 
+
+
+```
 // Setup the stacked panel.
 let panel = new StackedPanel();
 panel.addChild(w1);
@@ -133,3 +147,9 @@ w1.hide();
 w2.show();
 w3.hide();
 ```
+
+
+API
+---
+
+[API Docs](http://phosphorjs.github.io/phosphor-stackedpanel/api/)
